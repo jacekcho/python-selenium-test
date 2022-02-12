@@ -14,6 +14,4 @@ class SeleniumTest(unittest.TestCase):
     driver.get('https://modivo.pl/')
 
     # // then
-    element = driver.find_elements_by_class_name("marketing-bar-global")
-    is_displayed = element.is_displayed()
-    print(is_displayed)
+    driver.close()
